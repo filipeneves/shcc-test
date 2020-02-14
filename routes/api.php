@@ -13,6 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+/**
+ * @endpoint /v1/image
+ */
+Route::group(['prefix' => 'image'], function () {
+
+    // v1/image/upload
+    Route::get('/upload', 'Image\\ImageController@transform');
+
 });
