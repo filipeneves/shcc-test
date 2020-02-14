@@ -19,6 +19,6 @@ use Illuminate\Http\Request;
 Route::group(['prefix' => 'image'], function () {
 
     // v1/image/upload
-    Route::get('/upload', 'Image\\ImageController@transform');
+    Route::post('/upload', 'Image\\ImageController@transform');
 
 });
