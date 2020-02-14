@@ -12,6 +12,9 @@ class TransformImageJob
 
     use Dispatchable, Queueable;
 
+    /**
+     * List of allowed image transformations
+     */
     private const ALLOWED_FILTERS = [
         'invert',
         'greyscale',
