@@ -22,7 +22,7 @@ class ImageController extends Controller
     public function transform(ImageUploadRequest $request)
     {
         $image = Image::make($request->file('image'));
-        $filters = json_decode(base64_decode($request->filters));
+        $filters = json_decode($request->filters);
         if (!$filters) {
             abort(400);
         }
