@@ -11,7 +11,7 @@ class TransformImageJob
 {
 
     use Dispatchable, Queueable;
-
+    
     /**
      * List of allowed image transformations
      */
