@@ -30,14 +30,11 @@ class TransformImageJob
         'fit',
         'gamma',
         'opacity',
-        'orientate',
         'resize',
         'trim',
         'widen',
         'width'
     ];
-
-    public $timeout = 1;
 
     /**
      * Image file to be transformed
